@@ -1,0 +1,15 @@
+.entire-view {
+    height: 100vh;
+    display: flex;
+}
+
+.dashboard-view {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+    padding: 15px;
+}
+
+.dashboard-view::-webkit-scrollbar {
+    display: none;
+}

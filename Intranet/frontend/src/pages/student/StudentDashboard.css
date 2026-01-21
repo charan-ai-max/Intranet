@@ -1,0 +1,250 @@
+/* StudentDashboard.css */
+.dashboard-root {
+  display: flex;
+  min-height: 100vh;
+  background: #f6f8fb;
+  overflow-y: auto;
+  overflow: hidden;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px 30px 15px 30px;
+  border-bottom: 1px solid #e3e8ee;
+  border-radius: 15px;
+}
+.dashboard-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.dashboard-search-user {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.dashboard-search {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #e3e8ee;
+  font-size: 1rem;
+  background: #f6f8fb;
+  outline: none;
+  width: 180px;
+}
+.dashboard-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  background: #ffe0c2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.user-name {
+  font-weight: 600;
+  color: #222;
+}
+.user-email {
+  font-size: 0.95rem;
+  color: #888;
+}
+
+.dashboard-body {
+  display: flex;
+  flex: 1;
+  padding: 32px 36px 0 36px;
+  gap: 32px;
+}
+.dashboard-main {
+  flex: 2;
+}
+.welcome {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.welcome-sub {
+  color: #888;
+  margin-bottom: 24px;
+}
+.dashboard-cards {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.dashboard-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(10,35,66,0.04);
+  padding: 24px 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card-title {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.card-value {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ff6b00;
+}
+.dashboard-section {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(10,35,66,0.04);
+  padding: 24px 32px;
+  margin-top: 24px;
+}
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.section-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.section-item {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+.section-item:last-child {
+  border-bottom: none;
+}
+.item-title {
+  font-weight: 500;
+  color: #222;
+}
+.item-meta {
+  font-size: 0.97rem;
+  color: #888;
+}
+
+.dashboard-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.side-section {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(10,35,66,0.04);
+  padding: 24px 24px 20px 24px;
+  margin-bottom: 8px;
+}
+.side-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.side-title.small {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.side-desc {
+  color: #888;
+  font-size: 0.98rem;
+  margin-bottom: 18px;
+}
+.side-btn {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.side-btn.main {
+  background: #ff6b00;
+  color: #fff;
+}
+.side-btn.main:hover {
+  background: #e65a00;
+}
+.side-btn.secondary {
+  background: #fff4ea;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.side-btn.secondary:hover {
+  background: #ffe0c2;
+}
+.download-icon {
+  font-size: 1.1rem;
+}
+.side-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.filter {
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 0.97rem;
+  font-weight: 500;
+  background: #f0f0f0;
+  color: #888;
+  margin-bottom: 4px;
+}
+.filter.exam {
+  background: #ffe0c2;
+  color: #ff6b00;
+}
+.filter.lab {
+  background: #ffe0c2;
+  color: #ff6b00;
+}
+.filter.assignment {
+  background: #e3e8ee;
+  color: #888;
+}
+
+@media (max-width: 1100px) {
+  .dashboard-body {
+    flex-direction: column;
+    gap: 0;
+  }
+  .dashboard-main, .dashboard-side {
+    width: 100%;
+    flex: unset;
+  }
+  .dashboard-side {
+    margin-top: 24px;
+  }
+}
